@@ -1,7 +1,5 @@
-export const Logo = () => {
+import LogoImg from '../../assets/logo.svg'
+export const Logo = ({ className}: { className: string}) => {
   return (
-    <div>
-      
-    </div>
-  )
+      <img  className={className} src={LogoImg} alt="logo" />)
 }
