@@ -1,7 +1,7 @@
-export const Banner = () => {
+export const Banner = ({ className }: { className?: string }) => {
   return (
-      <div className="grow-[1] flex justify-end align-bottom bg-[url('./assets/banner.png')] bg-cover bg-right bg-no-repeat p-[28px]">
-          <div className="flex flex-col justify-end align-bottom text-white text-right">
+      <div className={`${className} flex justify-end items-bottom bg-[url('./assets/banner.png')] bg-cover bg-right bg-no-repeat p-[28px]`}>
+          <div className="flex flex-col justify-end items-bottom text-white text-right">
               <h2 className="text-[48px] font-bold">
                 白頭翁 (Chinese bulbul)
               </h2>

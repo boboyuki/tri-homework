@@ -4,7 +4,7 @@ import { useState } from "react"
 // 白頭翁的故事
 // 白頭翁的美照
 // 白頭翁的危機
-export const Menu = () => {
+export const Menu = ({ className }: { className?: string}) => {
   const [menus] = useState([
     {
       id: 1,
@@ -25,7 +25,7 @@ export const Menu = () => {
   ])
     return (
       // ul list
-      <ul className="flex flex-col justify-center align-middle">
+      <ul className={`flex flex-col justify-center items-middle ${className}`}>
         {
           menus.map((menu) => {
             return (
